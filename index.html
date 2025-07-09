@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shii Studies Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">Shii Studies Network</a>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="events.html">Events</a>
+                    <a href="members.html">Members</a>
+                </nav>
+                <button class="burger-menu" id="burger-menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <p class="hero-text">A network for students of Shiism in the academy</p>
+            </section>
+
+            <section class="upcoming-events">
+                <h2>Upcoming Events</h2>
+                <div class="events-grid">
+                    <div class="featured-event">
+                        <div class="event-image">
+                            <img src="photos/event1.jpg" alt="Featured Event" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRTVFNUU1Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjE0Ij5FdmVudCBJbWFnZTwvdGV4dD4KPHA+Cg=='">
+                        </div>
+                        <div class="event-info">
+                            <h3><a href="events/event1.html">Mystical Traditions in Early Shiism</a></h3>
+                            <p class="event-date">March 15, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sidebar-events">
+                        <div class="sidebar-event">
+                            <h4><a href="events/event2.html">Contemporary Shii Jurisprudence</a></h4>
+                            <p class="event-date">April 2, 2025</p>
+                        </div>
+                        <div class="sidebar-event">
+                            <h4><a href="events/event3.html">Shii Communities in Diaspora</a></h4>
+                            <p class="event-date">April 18, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Shii Studies Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile header hide on scroll
+        let lastScrollTop = 0;
+        const header = document.getElementById('header');
+        const burgerMenu = document.getElementById('burger-menu');
+        const nav = document.querySelector('.nav');
+
+        window.addEventListener('scroll', function() {
+            if (window.innerWidth <= 768) {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+                lastScrollTop = scrollTop;
+            }
+        });
+
+        // Burger menu toggle
+        burgerMenu.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!header.contains(event.target)) {
+                nav.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
