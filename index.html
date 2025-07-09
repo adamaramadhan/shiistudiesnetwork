@@ -4,95 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shii Studies Network</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
+    <script>
+        // Hide header on scroll
+        let lastScrollTop = 0;
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop){
+                header.classList.add("hide-header");
+            } else {
+                header.classList.remove("hide-header");
+            }
+            lastScrollTop = st <= 0 ? 0 : st;
+        }, false);
+
+        // Toggle mobile nav
+        function toggleMenu() {
+            const nav = document.querySelector("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">Shii Studies Network</a>
-                <nav class="nav">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="events.html">Events</a>
-                    <a href="members.html">Members</a>
-                </nav>
-                <button class="burger-menu" id="burger-menu">☰</button>
-            </div>
+
+    <header>
+        <a href="index.html">Shii Studies Network</a>
+        <div class="burger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="events.html">Events</a>
+            <a href="members.html">Members</a>
+        </nav>
     </header>
 
-    <main class="main">
-        <div class="container">
-            <section class="hero">
-                <p class="hero-text">A network for students of Shiism in the academy</p>
-            </section>
+    <main class="container">
+        <section>
+            <h1 style="font-size: 2rem; text-align: justify; text-indent: 2rem; margin-bottom: 2rem;">
+                A network for students of Shiism in the academy
+            </h1>
+        </section>
 
-            <section class="upcoming-events">
-                <h2>Upcoming Events</h2>
-                <div class="events-grid">
-                    <div class="featured-event">
-                        <div class="event-image">
-                            <img src="photos/event1.jpg" alt="Featured Event" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDMwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjRTVFNUU1Ii8+Cjx0ZXh0IHg9IjE1MCIgeT0iMTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjOTk5IiBmb250LXNpemU9IjE0Ij5FdmVudCBJbWFnZTwvdGV4dD4KPHA+Cg=='">
-                        </div>
-                        <div class="event-info">
-                            <h3><a href="events/event1.html">Mystical Traditions in Early Shiism</a></h3>
-                            <p class="event-date">March 15, 2025</p>
-                        </div>
-                    </div>
-                    
-                    <div class="sidebar-events">
-                        <div class="sidebar-event">
-                            <h4><a href="events/event2.html">Contemporary Shii Jurisprudence</a></h4>
-                            <p class="event-date">April 2, 2025</p>
-                        </div>
-                        <div class="sidebar-event">
-                            <h4><a href="events/event3.html">Shii Communities in Diaspora</a></h4>
-                            <p class="event-date">April 18, 2025</p>
-                        </div>
-                    </div>
+        <section>
+            <h2>Upcoming Events</h2>
+
+            <div class="large-event">
+                <img src="photos/event1.jpg" alt="Event Speaker">
+                <div>
+                    <h3><a href="events/event1.html">Shiism and Modernity</a></h3>
+                    <p>Date: September 15, 2025</p>
+                    <p>A conversation with Dr. A. Scholar on contemporary Shii thought.</p>
                 </div>
-            </section>
-        </div>
+            </div>
+
+            <div class="event-preview">
+                <div class="event-card">
+                    <h4><a href="events/event2.html">Shii Poetics and Devotion</a></h4>
+                    <p>Date: October 12, 2025</p>
+                </div>
+                <div class="event-card">
+                    <h4><a href="events/event3.html">Legal Authority in Shii Islam</a></h4>
+                    <p>Date: November 9, 2025</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 Shii Studies Network. All rights reserved.</p>
-        </div>
+    <footer>
+        © 2025 Shii Studies Network. All rights reserved.
     </footer>
 
-    <script>
-        // Mobile header hide on scroll
-        let lastScrollTop = 0;
-        const header = document.getElementById('header');
-        const burgerMenu = document.getElementById('burger-menu');
-        const nav = document.querySelector('.nav');
-
-        window.addEventListener('scroll', function() {
-            if (window.innerWidth <= 768) {
-                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                if (scrollTop > lastScrollTop) {
-                    header.style.transform = 'translateY(-100%)';
-                } else {
-                    header.style.transform = 'translateY(0)';
-                }
-                lastScrollTop = scrollTop;
-            }
-        });
-
-        // Burger menu toggle
-        burgerMenu.addEventListener('click', function() {
-            nav.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!header.contains(event.target)) {
-                nav.classList.remove('active');
-            }
-        });
-    </script>
 </body>
 </html>
