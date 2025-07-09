@@ -1,0 +1,513 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gentium Plus', serif;
+    background-color: #A3B18A;
+    color: #283618;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #606c38;
+    color: #dad7cd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+header.hidden {
+    transform: translateY(-100%);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #dad7cd;
+    text-decoration: none;
+}
+
+.desktop-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.desktop-nav a {
+    color: #dad7cd;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.desktop-nav a:hover {
+    opacity: 0.8;
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #dad7cd;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.mobile-nav {
+    display: none;
+    background-color: #606c38;
+    padding: 1rem 2rem;
+}
+
+.mobile-nav ul {
+    list-style: none;
+}
+
+.mobile-nav li {
+    margin: 1rem 0;
+}
+
+.mobile-nav a {
+    color: #dad7cd;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Main Content */
+main {
+    margin-top: 80px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Hero Section */
+.hero-section {
+    margin-bottom: 3rem;
+}
+
+.hero-content {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: justify;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #283618;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section Dividers */
+.section-divider {
+    height: 1px;
+    background-color: #DAD7CD;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+/* Upcoming Events */
+.upcoming-events h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #283618;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.event-card {
+    background-color: #606c38;
+    color: #dad7cd;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.event-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.event-date {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #dad7cd;
+}
+
+.event-card p {
+    margin-bottom: 1.5rem;
+}
+
+.event-link {
+    display: inline-block;
+    background-color: #dad7cd;
+    color: #606c38;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.event-link:hover {
+    opacity: 0.8;
+}
+
+/* About Page Styles */
+.about-content {
+    margin-bottom: 3rem;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #283618;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.team-section {
+    background-color: #606c38;
+    color: #dad7cd;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.team-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #dad7cd;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    margin-bottom: 0.5rem;
+}
+
+.team-member .role {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.team-member .university {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.team-member a {
+    color: #dad7cd;
+    text-decoration: underline;
+}
+
+/* Events Page Styles */
+.featured-events {
+    background-color: #606c38;
+    color: #dad7cd;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+}
+
+.featured-events h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #dad7cd;
+}
+
+.imminent-event {
+    background-color: #dad7cd;
+    color: #606c38;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.imminent-event h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.other-upcoming {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.other-upcoming .event-item {
+    background-color: rgba(218, 215, 205, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.past-events h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #283618;
+}
+
+.past-events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.past-event-item {
+    background-color: rgba(96, 108, 56, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.past-event-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.past-event-item .event-date {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #606c38;
+}
+
+/* Dedicated Event Page Styles */
+.event-details {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.event-abstract {
+    flex: 1;
+}
+
+.event-abstract h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #283618;
+}
+
+.event-abstract p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.speaker-info {
+    flex: 1;
+}
+
+.speaker-photo {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.speaker-photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.speaker-bio {
+    background-color: #606c38;
+    color: #dad7cd;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.speaker-bio h3 {
+    margin-bottom: 1rem;
+    color: #dad7cd;
+}
+
+.poster-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.poster-link a {
+    display: inline-block;
+    background-color: #606c38;
+    color: #dad7cd;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.poster-link a:hover {
+    opacity: 0.8;
+}
+
+/* Members Page Styles */
+.members-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.member-item {
+    background-color: rgba(96, 108, 56, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.member-item h3 {
+    margin-bottom: 0.5rem;
+    color: #283618;
+}
+
+.member-item .university {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.member-item .email {
+    color: #606c38;
+}
+
+.member-item .email a {
+    color: #606c38;
+    text-decoration: none;
+}
+
+.member-item .email a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #a4ac86;
+    color: #344E41;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .mobile-nav.active {
+        display: block;
+    }
+    
+    main {
+        margin-top: 60px;
+        padding: 1rem;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-details {
+        flex-direction: column;
+    }
+    
+    .speaker-info {
+        order: 2;
+    }
+    
+    .event-abstract {
+        order: 1;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .other-upcoming {
+        grid-template-columns: 1fr;
+    }
+    
+    .past-events-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .members-list {
+        grid-template-columns: 1fr;
+    }
+}
