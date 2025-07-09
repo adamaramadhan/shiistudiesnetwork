@@ -1,86 +1,58 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shii Studies Network</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
-    <script>
-        // Hide header on scroll
-        let lastScrollTop = 0;
-        window.addEventListener("scroll", function(){
-            const header = document.querySelector("header");
-            let st = window.pageYOffset || document.documentElement.scrollTop;
-            if (st > lastScrollTop){
-                header.classList.add("hide-header");
-            } else {
-                header.classList.remove("hide-header");
-            }
-            lastScrollTop = st <= 0 ? 0 : st;
-        }, false);
-
-        // Toggle mobile nav
-        function toggleMenu() {
-            const nav = document.querySelector("nav");
-            nav.classList.toggle("active");
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shii Studies Network</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header>
-        <a href="index.html">Shii Studies Network</a>
-        <div class="burger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Shii Studies Network</a>
+      <nav id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="members.html">Members</a>
+      </nav>
+      <button class="burger" id="burger">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="landing">
+      <h1>A network for students of Shiism in the academy</h1>
+    </section>
+    <section class="upcoming-events">
+      <div class="featured-event">
+        <img src="photos/event1.png" alt="Event photo">
+        <h2>Featured Event Title</h2>
+        <p>Date: 1 Aug 2025</p>
+        <a href="events/event1.html">Read more</a>
+      </div>
+      <div class="other-events">
+        <div>
+          <h3>Event 2 Title</h3>
+          <p>Date: 10 Aug 2025</p>
+          <a href="events/event2.html">Read more</a>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="events.html">Events</a>
-            <a href="members.html">Members</a>
-        </nav>
-    </header>
-
-    <main class="container">
-        <section>
-            <h1 style="font-size: 2rem; text-align: justify; text-indent: 2rem; margin-bottom: 2rem;">
-                A network for students of Shiism in the academy
-            </h1>
-        </section>
-
-        <section>
-            <h2>Upcoming Events</h2>
-
-            <div class="large-event">
-                <img src="photos/event1.jpg" alt="Event Speaker">
-                <div>
-                    <h3><a href="events/event1.html">Shiism and Modernity</a></h3>
-                    <p>Date: September 15, 2025</p>
-                    <p>A conversation with Dr. A. Scholar on contemporary Shii thought.</p>
-                </div>
-            </div>
-
-            <div class="event-preview">
-                <div class="event-card">
-                    <h4><a href="events/event2.html">Shii Poetics and Devotion</a></h4>
-                    <p>Date: October 12, 2025</p>
-                </div>
-                <div class="event-card">
-                    <h4><a href="events/event3.html">Legal Authority in Shii Islam</a></h4>
-                    <p>Date: November 9, 2025</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        © 2025 Shii Studies Network. All rights reserved.
-    </footer>
-
+        <div>
+          <h3>Event 3 Title</h3>
+          <p>Date: 20 Aug 2025</p>
+          <a href="events/event3.html">Read more</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Shii Studies Network. All rights reserved.</p>
+  </footer>
+  <script>
+    document.getElementById('burger').onclick = function () {
+      document.getElementById('nav-links').classList.toggle('active');
+    };
+  </script>
 </body>
 </html>
