@@ -1,29 +1,105 @@
-<!-- events.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>...</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Shii Studies Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <header>...</header>
-  <main>
-    <section class="callout">
-      <h1>Upcoming Events</h1>
-      <div class="featured-upcoming">
-        <h2>Imminent Event Title</h2>
-        <p>Date | Location</p>
-      </div>
-      <div class="upcoming-list">
-        <p>Future Event 1</p>
-        <p>Future Event 2</p>
-      </div>
-    </section>
-    <section class="past-events">
-      <h2>Past Events</h2>
-      <ul>
-        <li>Past Event A</li>
-        <li>Past Event B</li>
-      </ul>
-    </section>
-  </main>
-  <footer>...</footer>
+    <header class="header" id="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">Shii Studies Network</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="members.html">Members</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Events</h1>
+            
+            <div class="events-callout">
+                <div class="imminent-event">
+                    <h2>Imminent Event</h2>
+                    <h3><a href="events/event1.html">Understanding Shii Jurisprudence in Contemporary Context</a></h3>
+                    <p class="event-date">March 15, 2025</p>
+                    <p>Join us for an in-depth exploration of how traditional Shii jurisprudence adapts to modern challenges and contemporary issues facing Muslim communities worldwide.</p>
+                </div>
+                
+                <h2>Other Upcoming Events</h2>
+                <div class="upcoming-events-list">
+                    <div class="event-item">
+                        <h3><a href="events/event2.html">Mystical Traditions in Shii Islam</a></h3>
+                        <p class="event-date">April 8, 2025</p>
+                        <p>An examination of the mystical and spiritual dimensions within Shii Islamic tradition.</p>
+                    </div>
+                    
+                    <div class="event-item">
+                        <h3><a href="events/event3.html">Historical Perspectives on Shii Communities</a></h3>
+                        <p class="event-date">May 12, 2025</p>
+                        <p>A comprehensive look at the historical development and evolution of Shii communities across different regions.</p>
+                    </div>
+                    
+                    <div class="event-item">
+                        <h3><a href="events/event4.html">Women's Roles in Shii Scholarship</a></h3>
+                        <p class="event-date">June 20, 2025</p>
+                        <p>Exploring the contributions and perspectives of women scholars in Shii Islamic studies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="past-events">
+                <h2>Past Events</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <h3><a href="events/past-event1.html">Shii Theology and Philosophy</a></h3>
+                        <p class="event-date">January 25, 2025</p>
+                        <p>A comprehensive discussion on the theological foundations and philosophical implications of Shii thought.</p>
+                    </div>
+                    
+                    <div class="event-item">
+                        <h3><a href="events/past-event2.html">Contemporary Shii Political Movements</a></h3>
+                        <p class="event-date">December 10, 2024</p>
+                        <p>An analysis of modern political movements within Shii communities and their global impact.</p>
+                    </div>
+                    
+                    <div class="event-item">
+                        <h3><a href="events/past-event3.html">Ritual and Practice in Shii Islam</a></h3>
+                        <p class="event-date">November 15, 2024</p>
+                        <p>Examining the significance and evolution of ritual practices within Shii Islamic traditions.</p>
+                    </div>
+                    
+                    <div class="event-item">
+                        <h3><a href="events/past-event4.html">Interfaith Dialogue and Shii Perspectives</a></h3>
+                        <p class="event-date">October 8, 2024</p>
+                        <p>Exploring Shii approaches to interfaith dialogue and religious pluralism.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shii Studies Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
