@@ -1,38 +1,79 @@
-<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Shii Studies Network</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Shii Studies Network</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>...</header>
-  <main>
-    <section class="about-section">
-      <h1>About the Network</h1>
-      <p>...</p>
-    </section>
-    <section class="team-section">
-      <h2>Team Members</h2>
-      <div class="team-member">
-        <img src="photos/member1.png" alt="Member 1">
-        <div>
-          <h3>Dr. Name One</h3>
-          <p>Role | University | <a href="#">Website</a></p>
+    <header class="header" id="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">Shii Studies Network</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="members.html">Members</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-      </div>
-      <div class="team-member">
-        <img src="photos/member2.png" alt="Member 2">
-        <div>
-          <h3>Dr. Name Two</h3>
-          <p>Role | University | <a href="#">Website</a></p>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <section class="about-section">
+                <h1>About the Shii Studies Network</h1>
+                <p>The Shii Studies Network is a collaborative platform designed to foster academic excellence and community building among graduate students specializing in Shii Islam. Our mission is to create meaningful connections between scholars at different stages of their academic journey, providing opportunities for intellectual exchange, mentorship, and professional development.</p>
+                
+                <p>Through our network, we aim to bridge geographical and institutional boundaries, enabling students to share their research, receive feedback from peers, and learn from established scholars in the field. We believe that by creating these connections, we can contribute to the advancement of Shii studies as a discipline and support the next generation of scholars in their academic pursuits.</p>
+                
+                <h2>Our Goals</h2>
+                <p>Our primary objectives include facilitating regular academic discussions, organizing conferences and workshops, providing mentorship opportunities, and creating a supportive community where graduate students can develop both professionally and personally. We are committed to maintaining an inclusive environment that welcomes diverse perspectives and approaches to Shii studies.</p>
+            </section>
+
+            <section class="about-section">
+                <h2>Our Team</h2>
+                <div class="team-members">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="photos/member1.jpg" alt="Team Member 1" />
+                        </div>
+                        <h3 class="member-name">Dr. Sarah Ahmed</h3>
+                        <p class="member-role">Network Coordinator</p>
+                        <p class="member-university">University of Oxford</p>
+                        <a href="https://example.com/sarah-ahmed" class="member-website">Visit Website</a>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <img src="photos/member2.jpg" alt="Team Member 2" />
+                        </div>
+                        <h3 class="member-name">Mohammad Hassan</h3>
+                        <p class="member-role">Events Coordinator</p>
+                        <p class="member-university">Harvard University</p>
+                        <a href="https://example.com/mohammad-hassan" class="member-website">Visit Website</a>
+                    </div>
+                </div>
+            </section>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>...</footer>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shii Studies Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
