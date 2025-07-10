@@ -24,7 +24,7 @@ body {
 
 /* Header */
 .header {
-    background-color: #333d29;
+    background-color: #606c38;
     color: #FAF9F5;
     position: fixed;
     top: 0;
@@ -106,7 +106,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    color: #333d29;
+    color: #606c38;
     margin-bottom: 1rem;
 }
 
