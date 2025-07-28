@@ -140,15 +140,47 @@ a:hover {
 
 /* Hero Section */
 .hero {
-    text-align: center;
     padding: 3rem 0;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-text h1 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+    font-size: 1.4rem;
     line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Events Grid */
@@ -366,6 +398,33 @@ a:hover {
 }
 
 /* Mobile Styles */
+@media (max-width: 968px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-image {
+        order: -1;
+    }
+    
+    .hero-image img {
+        max-width: 300px;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        text-align: center;
+    }
+    
+    .hero-text p {
+        text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
     .nav {
         display: none;
@@ -430,6 +489,10 @@ a:hover {
     .hero {
         padding: 2rem 0;
     }
+    
+    .hero-text p {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -455,7 +518,15 @@ a:hover {
         font-size: 1.8rem;
     }
 
-    .hero p {
+    .hero-text p {
         font-size: 1.1rem;
+    }
+    
+    .hero-content {
+        gap: 1.5rem;
+    }
+    
+    .hero-image img {
+        max-width: 250px;
     }
 }
