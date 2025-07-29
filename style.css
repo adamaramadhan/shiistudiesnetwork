@@ -57,6 +57,7 @@ body {
     display: flex;
     list-style: none;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-links a {
@@ -66,6 +67,16 @@ body {
 }
 
 .nav-links a:hover {
+    opacity: 0.8;
+}
+
+.bluesky-icon {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.bluesky-icon:hover {
     opacity: 0.8;
 }
 
@@ -444,6 +455,7 @@ a:hover {
         flex-direction: column;
         padding: 1rem 20px;
         gap: 1rem;
+        align-items: center;
     }
 
     .mobile-menu-toggle {
