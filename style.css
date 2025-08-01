@@ -198,6 +198,15 @@ a:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.image-source {
+    font-size: 0.8rem;
+    color: #656d4a;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
 /* Events Grid */
 .upcoming-events {
     margin: 3rem 0;
@@ -459,6 +468,7 @@ a:hover {
         flex-direction: column;
         padding: 1rem 20px;
         gap: 1rem;
+        align-items: center;
     }
 
     .mobile-menu-toggle {
