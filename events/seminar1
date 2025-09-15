@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shii Studies Seminars I: Natalie Kontny-Wendt & Ebrahim Mansoor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html">Shii Studies Network</a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../events.html">Events</a></li>
+                    <li><a href="../members.html">Members</a></li>
+                    <li><a href="https://bsky.app" target="_blank" class="bluesky-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style="fill:#FFFFFF;">
+                            <path d="M5.769,3.618C8.291,5.512,11.004,9.352,12,11.412c0.996-2.06,3.709-5.9,6.231-7.793C20.051,2.252,23,1.195,23,4.559	c0,0.672-0.385,5.644-0.611,6.451c-0.785,2.806-3.647,3.522-6.192,3.089c4.449,0.757,5.581,3.265,3.137,5.774	c-4.643,4.764-6.672-1.195-7.193-2.722c-0.095-0.28-0.14-0.411-0.14-0.3c-0.001-0.112-0.045,0.019-0.14,0.3	c-0.521,1.527-2.55,7.486-7.193,2.722c-2.445-2.509-1.313-5.017,3.137-5.774c-2.546,0.433-5.407-0.282-6.192-3.089	C1.385,10.203,1,5.231,1,4.559C1,1.195,3.949,2.252,5.769,3.618L5.769,3.618z"></path>
+                        </svg>
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1>Shii Studies Seminars I: Natalie Kontny-Wendt & Ebrahim Mansoor</h1>
+            <p class="event-date">March 15, 2025 • 2:00 PM GMT</p>
+            
+            <div class="event-page-content">
+                <div class="event-abstract">
+                    <h2>Prosopography of Zaydī Rebellion (Kontny-Wendt)</h2>
+                    <p>Scholarship on rebellion in the early Islamic period is surprisingly scarce, and much of what there is emphasizes its religious aspects. This is particularly true in the case of uprisings led by a member of the Ṭālibid family which is overlaid with questions about the development of the Shīʿa or the broader context of (proto-)Shīʿī millenarianism and heresy.</p>
+                    
+                    <p>In contrast, my research addresses Ṭālibid/Zaydī rebellion as a socio-historical phenomenon by focussing on its supporters. Zayd b. ʿAlī’s revolt in Kūfa in 740 serves as the starting point of this research project, which spans a period of approximately fifty years. This includes the rebellions of Zayd’s son Yaḥyā (d. 743), the Jaʿfarid ʿAbdallāh b. Muʿāwiya (d. 748/9), Muḥammad al-Nafs al-Zakiyya (d. 762) and his brother Ibrāhīm b. ʿAbdallāh (d. 763), al-Ḥusayn b. ʿAlī Ṣāḥib Fakhkh (d. 786) as well as the two brothers Idrīs b. ʿAbdallāh (d. 791) and Yaḥyā b. ʿAbdallāh (d. 803). Finally, the work will also give an outlook to the larger cluster of pro-ʿAlid uprising in the early 9th century that started with the rebellion of Abū l-Sarāyā (d. 815) and Ibn Ṭabāṭabā (d. 815).</p>
+                    
+                    <p>In my talk, I will present some preliminary insights of my ongoing prosopographical research on the composition of the supporter networks and its implications for our understanding of rebellion and zaydiyya in the early Islamic period.</p>
+
+                    <h2>The Zaydī School of Law in Yemen and its Main Tradition (Mansoor)</h2>
+                    <p>Scholarly interest in Zaydism began in the late 19th century, with most research concentrating on its political and social history. In contrast, Zaydī law (<i>fiqh</i>) remains largely unexplored. This paper traces the historical development of Zaydī <i>fiqh</i>, highlighting its emergence and evolution across more than seven centuries. Beginning with the proto-<i>fiqh</i> of Kufa and the foundational contributions of Imām al-Qāsim al-Rassī (d. 246/860) and Imām al-Hādī ilā l-Ḥaqq (d. 298/911), it follows the systematization of Zaydī <i>fiqh</i> in the Caspian region (10th–12th centuries) and its subsequent transfer, reception, and canonization in Yemen (12th–14th centuries). By the 15th–16th centuries, Zaydī composition flourished. Special attention is given to <i>Kitāb al-Azhār</i> by the famous Zaydī scholar Aḥmad b. Yaḥyā Ibn al-Murtaḍā (d. 840/1436–7) and its pivotal role as a matn-centered canon for later inter-<i>madhhab</i> debates and methodological critique (e.g., by al-Wazīr). The presentation closes with the discussion of further Zaydī legal compositions. The focus here will be given to <i>Athmār al-Azhār</i> by Imām Yaḥyā Sharaf al-Dīn (d. 965/1558) and his attempt to establish a new canon.</p>
+                </div>
+                
+                <div class="speaker-info">
+                    <div class="speaker-photo">
+                        <img src="../photos/Kontny-Wendt.jpg" alt="Natalie Kontny-Wendt" />
+                    </div>
+                    <h3>Natalie Kontny-Wendt</h3>
+                    <p><strong>Universität Hamburg><br></p>
+                    
+                    <p>Natalie Kontny-Wendt is a doctoral researcher at the University of Hamburg, Germany, and a member of the Emmy Noether research group “Social Contexts of Rebellion in the Early Islamic Period (SCORE)”. Her research focuses on pro-ʿAlid rebellion in the long 8th century CE. As a contribution to a more nuanced understanding of rebellion and the <i>zaydiyya</i> in the early Islamic period, she pursues a prosopographical study of the supporters of eight Ṭālibid/Zaydī revolts starting with the uprising of Zayd b. ʿAlī (d. 740). Natalie holds a M.A. and a B.A. in Islamic Studies from Hamburg.</p>
+                </div>
+            </div>
+
+                <div class="speaker-info">
+                    <div class="speaker-photo">
+                        <img src="../photos/Mansoor.jpg" alt="Ebrahim Mansoor" />
+                    </div>
+                    <h3>Ebragim Mansoor</h3>
+                    <p><strong>Universitetet i Bergen</strong><br></p>
+                    
+                    <p>Ebrahim Mansoor is a Ph.D. candidate at the Department of Foreign Languages, University of Bergen, Norway. His academic journey began with a bachelor's degree in Sharīʿa and Law from Sana'a University, followed by a master's degree in Law from Alexandria University. In his Ph.D. project, Mansoor focuses on Zaydism and intends to pursue further research on various aspects of Zaydism, particularly its legal school (<i>madhhab</i>) in Yemen. Alongside his studies, Mansoor served as a lecturer in Arabic at the University of Bergen.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="../documents/event1-poster.pdf" class="poster-link">Download Event Poster (PDF)</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shii Studies Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
