@@ -336,12 +336,24 @@ a:hover {
     margin-top: 1rem;
 }
 
-/* Individual Event Page */
+/* Individual Event Page - Updated Layout */
 .event-page-content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
     margin: 2rem 0;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .event-abstract {
@@ -356,19 +368,7 @@ a:hover {
     border-radius: 8px;
 }
 
-.speaker-photo {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-}
-
-.speaker-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+/* Remove the old speaker-photo styles - no longer needed */
 
 .poster-link {
     display: inline-block;
@@ -484,7 +484,7 @@ a:hover {
         grid-template-columns: 1fr;
     }
 
-    .speaker-info {
+    .right-column {
         order: -1;
     }
 
